@@ -1,0 +1,1973 @@
+[
+    {
+        "id": "64e27202d9bcb22e",
+        "type": "group",
+        "z": "9ea88d13c999ce22",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "668f1480b7c984df",
+            "d3f89b0d16a474f4",
+            "cf739fa8f43c6cbf",
+            "d7cce32cbf7f4f0e",
+            "ce643832e4256e37",
+            "fe05acc94b3ed462",
+            "b7809cd7095a4dee",
+            "281b06b80fef70d3",
+            "9f5e7850bacedeb1",
+            "e5f7c9fcbfc6e8ba",
+            "2186e15c2d441089",
+            "cdb0a703ac91ac8a",
+            "31b7337cba1daa82",
+            "372f5cbaa502801a",
+            "50596bfccf4bd15a",
+            "b9763ee9169e2875"
+        ],
+        "x": 1674,
+        "y": 419,
+        "w": 632,
+        "h": 442
+    },
+    {
+        "id": "668f1480b7c984df",
+        "type": "ui_chart",
+        "z": "9ea88d13c999ce22",
+        "g": "64e27202d9bcb22e",
+        "name": "",
+        "group": "7dc029d4d8a5b82f",
+        "order": 1,
+        "width": 6,
+        "height": 7,
+        "label": "",
+        "chartType": "pie",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "step",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "10",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1870,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d3f89b0d16a474f4",
+        "type": "ui_chart",
+        "z": "9ea88d13c999ce22",
+        "g": "64e27202d9bcb22e",
+        "name": "",
+        "group": "06c58b672c0a1a12",
+        "order": 2,
+        "width": 6,
+        "height": 6,
+        "label": "",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "step",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "14",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1870,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cf739fa8f43c6cbf",
+        "type": "ui_toast",
+        "z": "9ea88d13c999ce22",
+        "g": "64e27202d9bcb22e",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 1910,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "d7cce32cbf7f4f0e",
+        "type": "link in",
+        "z": "9ea88d13c999ce22",
+        "g": "64e27202d9bcb22e",
+        "name": "link in 3",
+        "links": [
+            "3c043ad687b11e3f",
+            "404541f0c840019b",
+            "843002e373ba24fd",
+            "8da6bfb343e82829"
+        ],
+        "x": 1745,
+        "y": 640,
+        "wires": [
+            [
+                "d3f89b0d16a474f4",
+                "cf739fa8f43c6cbf",
+                "668f1480b7c984df",
+                "ce643832e4256e37",
+                "fe05acc94b3ed462",
+                "9f5e7850bacedeb1"
+            ]
+        ]
+    },
+    {
+        "id": "ce643832e4256e37",
+        "type": "ui_chart",
+        "z": "9ea88d13c999ce22",
+        "g": "64e27202d9bcb22e",
+        "name": "",
+        "group": "069c97ea3e3bbb43",
+        "order": 1,
+        "width": 6,
+        "height": 7,
+        "label": "",
+        "chartType": "horizontalBar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "step",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "14",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": true,
+        "className": "",
+        "x": 1870,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fe05acc94b3ed462",
+        "type": "function",
+        "z": "9ea88d13c999ce22",
+        "g": "64e27202d9bcb22e",
+        "name": "function 25",
+        "func": "var threshold = flow.get('oxygenThreshold')||3;\nif (msg.payload < threshold) {\n    msg.payload = \"Oxygen level is low!\";\n    msg.activateRelay = true;\n    return msg;\n} \nelse\n{\n    msg.payload = 0;\n    msg.activateRelay = false;\n    var s = msg.activateRelay;\n    return s\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1890,
+        "y": 760,
+        "wires": [
+            [
+                "b7809cd7095a4dee",
+                "31b7337cba1daa82"
+            ]
+        ]
+    },
+    {
+        "id": "b7809cd7095a4dee",
+        "type": "ui_toast",
+        "z": "9ea88d13c999ce22",
+        "g": "64e27202d9bcb22e",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 2130,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "281b06b80fef70d3",
+        "type": "ui_gauge",
+        "z": "9ea88d13c999ce22",
+        "g": "64e27202d9bcb22e",
+        "name": "",
+        "group": "e6874d35a9457534",
+        "order": 2,
+        "width": 6,
+        "height": 5,
+        "gtype": "wave",
+        "title": "",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "20",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 2110,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "9f5e7850bacedeb1",
+        "type": "function",
+        "z": "9ea88d13c999ce22",
+        "g": "64e27202d9bcb22e",
+        "name": "function 26",
+        "func": "var threshold = flow.get('oxygenThreshold');\nif (msg.payload <= threshold)\n{\n    var value = {\n        payload: msg.payload\n    }\n     \n    var name = msg.topic;\n    msg.payload = name; \n    return [value,msg];\n}\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1890,
+        "y": 700,
+        "wires": [
+            [
+                "281b06b80fef70d3"
+            ],
+            [
+                "e5f7c9fcbfc6e8ba"
+            ]
+        ]
+    },
+    {
+        "id": "e5f7c9fcbfc6e8ba",
+        "type": "ui_text",
+        "z": "9ea88d13c999ce22",
+        "g": "64e27202d9bcb22e",
+        "group": "e6874d35a9457534",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 2110,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "2186e15c2d441089",
+        "type": "ui_text-input",
+        "z": "9ea88d13c999ce22",
+        "g": "64e27202d9bcb22e",
+        "action": "set",
+        "actionType": "str",
+        "write": "payload",
+        "writeType": "msg",
+        "name": "",
+        "label": "Enter value to set Threshold",
+        "tooltip": "",
+        "group": "06c58b672c0a1a12",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "number",
+        "change": true,
+        "delay": 300,
+        "topic": "",
+        "x": 1880,
+        "y": 800,
+        "wires": [
+            [
+                "cdb0a703ac91ac8a"
+            ]
+        ]
+    },
+    {
+        "id": "cdb0a703ac91ac8a",
+        "type": "function",
+        "z": "9ea88d13c999ce22",
+        "g": "64e27202d9bcb22e",
+        "name": "Store Oxygen Threshold",
+        "func": "var threshold = msg.payload;\nflow.set('oxygenThreshold', threshold);\nmsg.payload = threshold;\nmsg.topic = \"Threshold set: \"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2170,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "31b7337cba1daa82",
+        "type": "ui_toast",
+        "z": "9ea88d13c999ce22",
+        "g": "64e27202d9bcb22e",
+        "position": "bottom right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 2150,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "372f5cbaa502801a",
+        "type": "comment",
+        "z": "9ea88d13c999ce22",
+        "g": "64e27202d9bcb22e",
+        "name": "Charts and Logics",
+        "info": "",
+        "x": 1790,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "50596bfccf4bd15a",
+        "type": "ui_digital_clock",
+        "z": "9ea88d13c999ce22",
+        "g": "64e27202d9bcb22e",
+        "name": "",
+        "group": "e6874d35a9457534",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "x": 2130,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "b9763ee9169e2875",
+        "type": "inject",
+        "z": "9ea88d13c999ce22",
+        "g": "64e27202d9bcb22e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1890,
+        "y": 500,
+        "wires": [
+            [
+                "50596bfccf4bd15a"
+            ]
+        ]
+    },
+    {
+        "id": "7dc029d4d8a5b82f",
+        "type": "ui_group",
+        "name": "Pie Chart",
+        "tab": "1ec2607ae34aa938",
+        "order": 10,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "06c58b672c0a1a12",
+        "type": "ui_group",
+        "name": "Line Chart",
+        "tab": "1ec2607ae34aa938",
+        "order": 12,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "069c97ea3e3bbb43",
+        "type": "ui_group",
+        "name": "Bar Chart ",
+        "tab": "1ec2607ae34aa938",
+        "order": 9,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e6874d35a9457534",
+        "type": "ui_group",
+        "name": "Lowest Oxygen",
+        "tab": "1ec2607ae34aa938",
+        "order": 15,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1ec2607ae34aa938",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "8859906df317623c",
+        "type": "group",
+        "z": "9ea88d13c999ce22",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "844b77cb60c2e08f",
+            "e04ac4d18fc82822",
+            "cb30f896cdc2ced9",
+            "67c2b585587dd76c",
+            "5f055e1c35e29e44",
+            "237fdb1720b028f6",
+            "d20c1259faa32615",
+            "c7d0dca2d8df347a",
+            "404541f0c840019b",
+            "b851ce77cf38d286",
+            "f1435ea5badc82b0"
+        ],
+        "x": 554,
+        "y": 339,
+        "w": 512,
+        "h": 322
+    },
+    {
+        "id": "844b77cb60c2e08f",
+        "type": "ui_text",
+        "z": "9ea88d13c999ce22",
+        "g": "8859906df317623c",
+        "group": "d2981d0f.0f7088",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 990,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "e04ac4d18fc82822",
+        "type": "ui_text",
+        "z": "9ea88d13c999ce22",
+        "g": "8859906df317623c",
+        "group": "d2981d0f.0f7088",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Time: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 990,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "cb30f896cdc2ced9",
+        "type": "ui_text",
+        "z": "9ea88d13c999ce22",
+        "g": "8859906df317623c",
+        "group": "97097f07c4563268",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 990,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "67c2b585587dd76c",
+        "type": "ui_text",
+        "z": "9ea88d13c999ce22",
+        "g": "8859906df317623c",
+        "group": "97097f07c4563268",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Time:",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 990,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "5f055e1c35e29e44",
+        "type": "ui_gauge",
+        "z": "9ea88d13c999ce22",
+        "g": "8859906df317623c",
+        "name": "",
+        "group": "97097f07c4563268",
+        "order": 2,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "14",
+        "colors": [
+            "#add6eb",
+            "#add6eb",
+            "#add6eb"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 990,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "237fdb1720b028f6",
+        "type": "ui_gauge",
+        "z": "9ea88d13c999ce22",
+        "g": "8859906df317623c",
+        "name": "",
+        "group": "d2981d0f.0f7088",
+        "order": 2,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "14",
+        "colors": [
+            "#0c6c9d",
+            "#0c6c9d",
+            "#0c6c9d"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 990,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "d20c1259faa32615",
+        "type": "function",
+        "z": "9ea88d13c999ce22",
+        "g": "8859906df317623c",
+        "name": "Extracting2",
+        "func": "// Function node code\nfunction hexToDecimal(hexString) {\n    // Remove the first 6 characters from the hexadecimal string\n    hexString = hexString.substring(6);\n\n    // Convert the hexadecimal string to a 32-bit integer\n    const intValue = parseInt(hexString, 16);\n\n    // Separate the bits of the 32-bit integer\n    const signBit = (intValue >> 31) & 0x1;\n    const exponentBits = (intValue >> 23) & 0xFF;\n    const mantissaBits = intValue & 0x7FFFFF;\n\n    // Determine the sign of the decimal number\n    const sign = signBit === 0 ? 1 : -1;\n\n    // Convert the exponent bits to a decimal integer\n    const exponent = exponentBits - 127;\n\n    // Calculate the decimal value of the mantissa\n    let mantissa = 1 + mantissaBits / Math.pow(2, 23);\n\n    // If the exponent is not zero (special cases handled separately)\n    if (exponent !== 0) {\n        // Apply the exponent to the mantissa\n        mantissa *= Math.pow(2, exponent);\n    }\n\n    // Round the result to 8 decimal places (adjust as needed)\n    const roundedDecimal = (sign * mantissa).toFixed(8);\n\n    return roundedDecimal;\n}\n\n\n// Extract the values of \"devaddr\" and \"data\" from the payload JSON\nvar devAddr = msg.payload.devaddr;\nvar dataa = msg.payload.data;\nvar datetime = msg.payload.datetime;\n\n// Convert the hexadecimal data to decimal using the hexToDecimal function\nvar dataDec = hexToDecimal(dataa);\nmsg.payload = parseFloat(dataDec);\nvar dataDecimal = parseFloat(msg.payload.toFixed(2));\n// Filtrar por \"devaddr\" del sensor 1 (por ejemplo, \"BC100309\")\nif (devAddr === \"BC100302\") {\n    // Crear un nuevo mensaje con el valor convertido de \"data\" para el medidor del sensor 1\n    var newMsg = {\n\n        payload: dataDecimal,\n        topic: \"Sensor2\"\n    }; var data = {\n        payload: datetime,\n        topic: \"dataTime\"\n    };\n    var devAddrr = {\n        payload: devAddr,\n        topic: \"SensorName\"\n\n    };\n\n    // Devolver el nuevo mensaje\n    return [devAddrr, newMsg, data];\n\n}\nelse {\n    // Si no es el sensor 1, retornar null para que no se envíe ningún mensaje al nodo \"gauge\"\n    return null;\n}\n",
+        "outputs": 3,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 580,
+        "wires": [
+            [
+                "cb30f896cdc2ced9"
+            ],
+            [
+                "5f055e1c35e29e44",
+                "404541f0c840019b"
+            ],
+            [
+                "67c2b585587dd76c"
+            ]
+        ]
+    },
+    {
+        "id": "c7d0dca2d8df347a",
+        "type": "function",
+        "z": "9ea88d13c999ce22",
+        "g": "8859906df317623c",
+        "name": "Extracting1",
+        "func": "// Function node code\nfunction hexToDecimal(hexString) {\n    // Remove the first 6 characters from the hexadecimal string\n    hexString = hexString.substring(6);\n\n    // Convert the hexadecimal string to a 32-bit integer\n    const intValue = parseInt(hexString, 16);\n\n    // Separate the bits of the 32-bit integer\n    const signBit = (intValue >> 31) & 0x1;\n    const exponentBits = (intValue >> 23) & 0xFF;\n    const mantissaBits = intValue & 0x7FFFFF;\n\n    // Determine the sign of the decimal number\n    const sign = signBit === 0 ? 1 : -1;\n\n    // Convert the exponent bits to a decimal integer\n    const exponent = exponentBits - 127;\n\n    // Calculate the decimal value of the mantissa\n    let mantissa = 1 + mantissaBits / Math.pow(2, 23);\n\n    // If the exponent is not zero (special cases handled separately)\n    if (exponent !== 0) {\n        // Apply the exponent to the mantissa\n        mantissa *= Math.pow(2, exponent);\n    }\n\n    // Round the result to 8 decimal places (adjust as needed)\n    const roundedDecimal = (sign * mantissa).toFixed(8);\n\n    return roundedDecimal;\n}\n\n\n// Extract the values of \"devaddr\" and \"data\" from the payload JSON\nvar devAddr = msg.payload.devaddr;\nvar dataa = msg.payload.data;\nvar datetime = msg.payload.datetime;\n\n// Convert the hexadecimal data to decimal using the hexToDecimal function\nvar dataDec = hexToDecimal(dataa);\nmsg.payload = parseFloat(dataDec);\nvar dataDecimal = parseFloat(msg.payload.toFixed(2));\n// Filtrar por \"devaddr\" del sensor 1 (por ejemplo, \"BC100309\")\nif (devAddr === \"BC100301\") {\n    // Crear un nuevo mensaje con el valor convertido de \"data\" para el medidor del sensor 1\n    var newMsg = {\n\n        payload: dataDecimal,\n        topic: \"Sensor1\"\n    }; var data = {\n        payload: datetime,\n        topic: \"dataTime\"\n    };\n    var devAddrr = {\n        payload: devAddr,\n        topic: \"SensorName\"\n\n    };\n\n    // Devolver el nuevo mensaje\n    return [devAddrr, newMsg, data];\n\n}\nelse {\n    // Si no es el sensor 1, retornar null para que no se envíe ningún mensaje al nodo \"gauge\"\n    return null;\n}",
+        "outputs": 3,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 440,
+        "wires": [
+            [
+                "844b77cb60c2e08f"
+            ],
+            [
+                "237fdb1720b028f6",
+                "404541f0c840019b"
+            ],
+            [
+                "e04ac4d18fc82822"
+            ]
+        ]
+    },
+    {
+        "id": "404541f0c840019b",
+        "type": "link out",
+        "z": "9ea88d13c999ce22",
+        "g": "8859906df317623c",
+        "name": "link out 8",
+        "mode": "link",
+        "links": [
+            "d7cce32cbf7f4f0e"
+        ],
+        "x": 865,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "b851ce77cf38d286",
+        "type": "link in",
+        "z": "9ea88d13c999ce22",
+        "g": "8859906df317623c",
+        "name": "link in 7",
+        "links": [
+            "61d27f1d800733de"
+        ],
+        "x": 595,
+        "y": 520,
+        "wires": [
+            [
+                "c7d0dca2d8df347a",
+                "d20c1259faa32615"
+            ]
+        ]
+    },
+    {
+        "id": "f1435ea5badc82b0",
+        "type": "comment",
+        "z": "9ea88d13c999ce22",
+        "g": "8859906df317623c",
+        "name": "Sensor 1 & Sensor 2",
+        "info": "",
+        "x": 670,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "d2981d0f.0f7088",
+        "type": "ui_group",
+        "name": "Sensor 1",
+        "tab": "1ec2607ae34aa938",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "97097f07c4563268",
+        "type": "ui_group",
+        "name": "Sensor 2",
+        "tab": "1ec2607ae34aa938",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8f4f349ceff2d105",
+        "type": "group",
+        "z": "9ea88d13c999ce22",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "47a0d1e2a5d92e90",
+            "d2bc8eca1ec64613",
+            "13fce17bc80fab1b",
+            "d37fb336eaad1b11",
+            "9512e6248441e6bf",
+            "916beb30ed9caee5",
+            "0cf8beaa3a3f43b6",
+            "0f7aacba0e73ce7a",
+            "3c043ad687b11e3f",
+            "554999ac3f23502d",
+            "f0f5d49d80b8038a"
+        ],
+        "x": 554,
+        "y": 719,
+        "w": 512,
+        "h": 322
+    },
+    {
+        "id": "47a0d1e2a5d92e90",
+        "type": "ui_text",
+        "z": "9ea88d13c999ce22",
+        "g": "8f4f349ceff2d105",
+        "group": "20cfdf5ec650659d",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 990,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "d2bc8eca1ec64613",
+        "type": "ui_text",
+        "z": "9ea88d13c999ce22",
+        "g": "8f4f349ceff2d105",
+        "group": "20cfdf5ec650659d",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Time:",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 990,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "13fce17bc80fab1b",
+        "type": "ui_text",
+        "z": "9ea88d13c999ce22",
+        "g": "8f4f349ceff2d105",
+        "group": "58418f2018cfd4ea",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 990,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "d37fb336eaad1b11",
+        "type": "ui_text",
+        "z": "9ea88d13c999ce22",
+        "g": "8f4f349ceff2d105",
+        "group": "58418f2018cfd4ea",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Time:",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 990,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "9512e6248441e6bf",
+        "type": "ui_gauge",
+        "z": "9ea88d13c999ce22",
+        "g": "8f4f349ceff2d105",
+        "name": "",
+        "group": "58418f2018cfd4ea",
+        "order": 2,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "14",
+        "colors": [
+            "#e30d0d",
+            "#e30d0d",
+            "#de0d0d"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 990,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "916beb30ed9caee5",
+        "type": "ui_gauge",
+        "z": "9ea88d13c999ce22",
+        "g": "8f4f349ceff2d105",
+        "name": "",
+        "group": "20cfdf5ec650659d",
+        "order": 2,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "14",
+        "colors": [
+            "#19d749",
+            "#19d749",
+            "#19d749"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 990,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "0cf8beaa3a3f43b6",
+        "type": "function",
+        "z": "9ea88d13c999ce22",
+        "g": "8f4f349ceff2d105",
+        "name": "Extracting5",
+        "func": "// Function node code\nfunction hexToDecimal(hexString) {\n    // Remove the first 6 characters from the hexadecimal string\n    hexString = hexString.substring(6);\n\n    // Convert the hexadecimal string to a 32-bit integer\n    const intValue = parseInt(hexString, 16);\n\n    // Separate the bits of the 32-bit integer\n    const signBit = (intValue >> 31) & 0x1;\n    const exponentBits = (intValue >> 23) & 0xFF;\n    const mantissaBits = intValue & 0x7FFFFF;\n\n    // Determine the sign of the decimal number\n    const sign = signBit === 0 ? 1 : -1;\n\n    // Convert the exponent bits to a decimal integer\n    const exponent = exponentBits - 127;\n\n    // Calculate the decimal value of the mantissa\n    let mantissa = 1 + mantissaBits / Math.pow(2, 23);\n\n    // If the exponent is not zero (special cases handled separately)\n    if (exponent !== 0) {\n        // Apply the exponent to the mantissa\n        mantissa *= Math.pow(2, exponent);\n    }\n\n    // Round the result to 8 decimal places (adjust as needed)\n    const roundedDecimal = (sign * mantissa).toFixed(8);\n\n    return roundedDecimal;\n}\n\n\n// Extract the values of \"devaddr\" and \"data\" from the payload JSON\nvar devAddr = msg.payload.devaddr;\nvar dataa = msg.payload.data;\nvar datetime = msg.payload.datetime;\n\n// Convert the hexadecimal data to decimal using the hexToDecimal function\nvar dataDec = hexToDecimal(dataa);\nmsg.payload = parseFloat(dataDec);\nvar dataDecimal = parseFloat(msg.payload.toFixed(2));\n// Filtrar por \"devaddr\" del sensor 1 (por ejemplo, \"BC100309\")\nif (devAddr === \"BC100305\") {\n    // Crear un nuevo mensaje con el valor convertido de \"data\" para el medidor del sensor 1\n    var newMsg = {\n\n        payload: dataDecimal,\n        topic: \"Sensor5\"\n    }; var data = {\n        payload: datetime,\n        topic: \"dataTime\"\n    };\n    var devAddrr = {\n        payload: devAddr,\n        topic: \"SensorName\"\n\n    };\n\n    // Devolver el nuevo mensaje\n    return [devAddrr, newMsg, data];\n\n}\nelse {\n    // Si no es el sensor 1, retornar null para que no se envíe ningún mensaje al nodo \"gauge\"\n    return null;\n}\n",
+        "outputs": 3,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 820,
+        "wires": [
+            [
+                "47a0d1e2a5d92e90"
+            ],
+            [
+                "916beb30ed9caee5",
+                "3c043ad687b11e3f"
+            ],
+            [
+                "d2bc8eca1ec64613"
+            ]
+        ]
+    },
+    {
+        "id": "0f7aacba0e73ce7a",
+        "type": "function",
+        "z": "9ea88d13c999ce22",
+        "g": "8f4f349ceff2d105",
+        "name": "Extracting6",
+        "func": "// Function node code\nfunction hexToDecimal(hexString) {\n    // Remove the first 6 characters from the hexadecimal string\n    hexString = hexString.substring(6);\n\n    // Convert the hexadecimal string to a 32-bit integer\n    const intValue = parseInt(hexString, 16);\n\n    // Separate the bits of the 32-bit integer\n    const signBit = (intValue >> 31) & 0x1;\n    const exponentBits = (intValue >> 23) & 0xFF;\n    const mantissaBits = intValue & 0x7FFFFF;\n\n    // Determine the sign of the decimal number\n    const sign = signBit === 0 ? 1 : -1;\n\n    // Convert the exponent bits to a decimal integer\n    const exponent = exponentBits - 127;\n\n    // Calculate the decimal value of the mantissa\n    let mantissa = 1 + mantissaBits / Math.pow(2, 23);\n\n    // If the exponent is not zero (special cases handled separately)\n    if (exponent !== 0) {\n        // Apply the exponent to the mantissa\n        mantissa *= Math.pow(2, exponent);\n    }\n\n    // Round the result to 8 decimal places (adjust as needed)\n    const roundedDecimal = (sign * mantissa).toFixed(8);\n\n    return roundedDecimal;\n}\n\n\n// Extract the values of \"devaddr\" and \"data\" from the payload JSON\nvar devAddr = msg.payload.devaddr;\nvar dataa = msg.payload.data;\nvar datetime = msg.payload.datetime;\n\n// Convert the hexadecimal data to decimal using the hexToDecimal function\nvar dataDec = hexToDecimal(dataa);\nmsg.payload = parseFloat(dataDec);\nvar dataDecimal = parseFloat(msg.payload.toFixed(2));\n// Filtrar por \"devaddr\" del sensor 1 (por ejemplo, \"BC100309\")\nif (devAddr === \"BC100306\") {\n    // Crear un nuevo mensaje con el valor convertido de \"data\" para el medidor del sensor 1\n    var newMsg = {\n\n        payload: dataDecimal,\n        topic: \"Sensor6\"\n    }; var data = {\n        payload: datetime,\n        topic: \"dataTime\"\n    };\n    var devAddrr = {\n        payload: devAddr,\n        topic: \"SensorName\"\n\n    };\n\n    // Devolver el nuevo mensaje\n    return [devAddrr, newMsg, data];\n\n}\nelse {\n    // Si no es el sensor 1, retornar null para que no se envíe ningún mensaje al nodo \"gauge\"\n    return null;\n}\n",
+        "outputs": 3,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 960,
+        "wires": [
+            [
+                "13fce17bc80fab1b"
+            ],
+            [
+                "9512e6248441e6bf",
+                "3c043ad687b11e3f"
+            ],
+            [
+                "d37fb336eaad1b11"
+            ]
+        ]
+    },
+    {
+        "id": "3c043ad687b11e3f",
+        "type": "link out",
+        "z": "9ea88d13c999ce22",
+        "g": "8f4f349ceff2d105",
+        "name": "link out 10",
+        "mode": "link",
+        "links": [
+            "d7cce32cbf7f4f0e"
+        ],
+        "x": 865,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "554999ac3f23502d",
+        "type": "link in",
+        "z": "9ea88d13c999ce22",
+        "g": "8f4f349ceff2d105",
+        "name": "link in 5",
+        "links": [
+            "61d27f1d800733de"
+        ],
+        "x": 605,
+        "y": 900,
+        "wires": [
+            [
+                "0f7aacba0e73ce7a",
+                "0cf8beaa3a3f43b6"
+            ]
+        ]
+    },
+    {
+        "id": "f0f5d49d80b8038a",
+        "type": "comment",
+        "z": "9ea88d13c999ce22",
+        "g": "8f4f349ceff2d105",
+        "name": "Sensor 5 & Sensor 6",
+        "info": "",
+        "x": 670,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "20cfdf5ec650659d",
+        "type": "ui_group",
+        "name": "Sensor 5",
+        "tab": "1ec2607ae34aa938",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "58418f2018cfd4ea",
+        "type": "ui_group",
+        "name": "Sensor 6",
+        "tab": "1ec2607ae34aa938",
+        "order": 6,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4f34fcd7f12b2deb",
+        "type": "group",
+        "z": "9ea88d13c999ce22",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "6c67359045bc1405",
+            "aef34e80412cc778",
+            "b21727c76f45a8d4",
+            "fa7b8037efc509a9",
+            "bd6233a9c0e2c670",
+            "7f47698509174093",
+            "68ca45ae491abbcf",
+            "3057bcef1a6cef65",
+            "8da6bfb343e82829",
+            "e60c73a11c71045d",
+            "857b3d1e2f2095a9"
+        ],
+        "x": 1094,
+        "y": 719,
+        "w": 512,
+        "h": 322
+    },
+    {
+        "id": "6c67359045bc1405",
+        "type": "ui_text",
+        "z": "9ea88d13c999ce22",
+        "g": "4f34fcd7f12b2deb",
+        "group": "37a63dafcb0ab179",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 1530,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "aef34e80412cc778",
+        "type": "ui_text",
+        "z": "9ea88d13c999ce22",
+        "g": "4f34fcd7f12b2deb",
+        "group": "37a63dafcb0ab179",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Time:",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 1530,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "b21727c76f45a8d4",
+        "type": "ui_text",
+        "z": "9ea88d13c999ce22",
+        "g": "4f34fcd7f12b2deb",
+        "group": "ec5b4ffe19b10998",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 1530,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "fa7b8037efc509a9",
+        "type": "ui_text",
+        "z": "9ea88d13c999ce22",
+        "g": "4f34fcd7f12b2deb",
+        "group": "ec5b4ffe19b10998",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Time:",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 1530,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "bd6233a9c0e2c670",
+        "type": "ui_gauge",
+        "z": "9ea88d13c999ce22",
+        "g": "4f34fcd7f12b2deb",
+        "name": "",
+        "group": "37a63dafcb0ab179",
+        "order": 2,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "14",
+        "colors": [
+            "#ff85af",
+            "#ff71af",
+            "#ff71af"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1530,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "7f47698509174093",
+        "type": "ui_gauge",
+        "z": "9ea88d13c999ce22",
+        "g": "4f34fcd7f12b2deb",
+        "name": "",
+        "group": "ec5b4ffe19b10998",
+        "order": 2,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "14",
+        "colors": [
+            "#7e0e86",
+            "#7e0e86",
+            "#7e0e86"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1530,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "68ca45ae491abbcf",
+        "type": "function",
+        "z": "9ea88d13c999ce22",
+        "g": "4f34fcd7f12b2deb",
+        "name": "Extracting7",
+        "func": "// Function node code\nfunction hexToDecimal(hexString) {\n    // Remove the first 6 characters from the hexadecimal string\n    hexString = hexString.substring(6);\n\n    // Convert the hexadecimal string to a 32-bit integer\n    const intValue = parseInt(hexString, 16);\n\n    // Separate the bits of the 32-bit integer\n    const signBit = (intValue >> 31) & 0x1;\n    const exponentBits = (intValue >> 23) & 0xFF;\n    const mantissaBits = intValue & 0x7FFFFF;\n\n    // Determine the sign of the decimal number\n    const sign = signBit === 0 ? 1 : -1;\n\n    // Convert the exponent bits to a decimal integer\n    const exponent = exponentBits - 127;\n\n    // Calculate the decimal value of the mantissa\n    let mantissa = 1 + mantissaBits / Math.pow(2, 23);\n\n    // If the exponent is not zero (special cases handled separately)\n    if (exponent !== 0) {\n        // Apply the exponent to the mantissa\n        mantissa *= Math.pow(2, exponent);\n    }\n\n    // Round the result to 8 decimal places (adjust as needed)\n    const roundedDecimal = (sign * mantissa).toFixed(8);\n\n    return roundedDecimal;\n}\n\n\n// Extract the values of \"devaddr\" and \"data\" from the payload JSON\nvar devAddr = msg.payload.devaddr;\nvar dataa = msg.payload.data;\nvar datetime = msg.payload.datetime;\n\n// Convert the hexadecimal data to decimal using the hexToDecimal function\nvar dataDec = hexToDecimal(dataa);\nmsg.payload = parseFloat(dataDec);\nvar dataDecimal = parseFloat(msg.payload.toFixed(2));\n// Filtrar por \"devaddr\" del sensor 1 (por ejemplo, \"BC100309\")\nif (devAddr === \"BC100307\") {\n    // Crear un nuevo mensaje con el valor convertido de \"data\" para el medidor del sensor 1\n    var newMsg = {\n\n        payload: dataDecimal,\n        topic: \"Sensor7\"\n    }; var data = {\n        payload: datetime,\n        topic: \"dataTime\"\n    };\n    var devAddrr = {\n        payload: devAddr,\n        topic: \"SensorName\"\n\n    };\n\n    // Devolver el nuevo mensaje\n    return [devAddrr, newMsg, data];\n\n}\nelse {\n    // Si no es el sensor 1, retornar null para que no se envíe ningún mensaje al nodo \"gauge\"\n    return null;\n}\n",
+        "outputs": 3,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1290,
+        "y": 820,
+        "wires": [
+            [
+                "6c67359045bc1405"
+            ],
+            [
+                "bd6233a9c0e2c670",
+                "8da6bfb343e82829"
+            ],
+            [
+                "aef34e80412cc778"
+            ]
+        ]
+    },
+    {
+        "id": "3057bcef1a6cef65",
+        "type": "function",
+        "z": "9ea88d13c999ce22",
+        "g": "4f34fcd7f12b2deb",
+        "name": "Extracting8",
+        "func": "// Function node code\nfunction hexToDecimal(hexString) {\n    // Remove the first 6 characters from the hexadecimal string\n    hexString = hexString.substring(6);\n\n    // Convert the hexadecimal string to a 32-bit integer\n    const intValue = parseInt(hexString, 16);\n\n    // Separate the bits of the 32-bit integer\n    const signBit = (intValue >> 31) & 0x1;\n    const exponentBits = (intValue >> 23) & 0xFF;\n    const mantissaBits = intValue & 0x7FFFFF;\n\n    // Determine the sign of the decimal number\n    const sign = signBit === 0 ? 1 : -1;\n\n    // Convert the exponent bits to a decimal integer\n    const exponent = exponentBits - 127;\n\n    // Calculate the decimal value of the mantissa\n    let mantissa = 1 + mantissaBits / Math.pow(2, 23);\n\n    // If the exponent is not zero (special cases handled separately)\n    if (exponent !== 0) {\n        // Apply the exponent to the mantissa\n        mantissa *= Math.pow(2, exponent);\n    }\n\n    // Round the result to 8 decimal places (adjust as needed)\n    const roundedDecimal = (sign * mantissa).toFixed(8);\n\n    return roundedDecimal;\n}\n\n\n// Extract the values of \"devaddr\" and \"data\" from the payload JSON\nvar devAddr = msg.payload.devaddr;\nvar dataa = msg.payload.data;\nvar datetime = msg.payload.datetime;\n\n// Convert the hexadecimal data to decimal using the hexToDecimal function\nvar dataDec = hexToDecimal(dataa);\nmsg.payload = parseFloat(dataDec);\nvar dataDecimal = parseFloat(msg.payload.toFixed(2));\n// Filtrar por \"devaddr\" del sensor 1 (por ejemplo, \"BC100309\")\nif (devAddr === \"BC100308\") {\n    // Crear un nuevo mensaje con el valor convertido de \"data\" para el medidor del sensor 1\n    var newMsg = {\n\n        payload: dataDecimal,\n        topic: \"Sensor8\"\n    }; var data = {\n        payload: datetime,\n        topic: \"dataTime\"\n    };\n    var devAddrr = {\n        payload: devAddr,\n        topic: \"SensorName\"\n\n    };\n\n    // Devolver el nuevo mensaje\n    return [devAddrr, newMsg, data];\n\n}\nelse {\n    // Si no es el sensor 1, retornar null para que no se envíe ningún mensaje al nodo \"gauge\"\n    return null;\n}\n",
+        "outputs": 3,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1290,
+        "y": 960,
+        "wires": [
+            [
+                "b21727c76f45a8d4"
+            ],
+            [
+                "7f47698509174093",
+                "8da6bfb343e82829"
+            ],
+            [
+                "fa7b8037efc509a9"
+            ]
+        ]
+    },
+    {
+        "id": "8da6bfb343e82829",
+        "type": "link out",
+        "z": "9ea88d13c999ce22",
+        "g": "4f34fcd7f12b2deb",
+        "name": "link out 11",
+        "mode": "link",
+        "links": [
+            "d7cce32cbf7f4f0e"
+        ],
+        "x": 1405,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "e60c73a11c71045d",
+        "type": "link in",
+        "z": "9ea88d13c999ce22",
+        "g": "4f34fcd7f12b2deb",
+        "name": "link in 4",
+        "links": [
+            "61d27f1d800733de"
+        ],
+        "x": 1155,
+        "y": 880,
+        "wires": [
+            [
+                "68ca45ae491abbcf",
+                "3057bcef1a6cef65"
+            ]
+        ]
+    },
+    {
+        "id": "857b3d1e2f2095a9",
+        "type": "comment",
+        "z": "9ea88d13c999ce22",
+        "g": "4f34fcd7f12b2deb",
+        "name": "Sensor 7 & Sensor 8",
+        "info": "",
+        "x": 1210,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "37a63dafcb0ab179",
+        "type": "ui_group",
+        "name": "Sensor 7",
+        "tab": "1ec2607ae34aa938",
+        "order": 7,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ec5b4ffe19b10998",
+        "type": "ui_group",
+        "name": "Sensor 8",
+        "tab": "1ec2607ae34aa938",
+        "order": 8,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "62a7ea2cfb50b3c0",
+        "type": "group",
+        "z": "9ea88d13c999ce22",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "4ee1efd5cda39c11",
+            "f09cd67ca99c6267",
+            "9b34a13798f04d8d",
+            "713acf47999494eb",
+            "63e03c73c9530e6c",
+            "be4f9a1f3f8de81b",
+            "39526443d1e5ee6e",
+            "a81f855fb3c9f44b",
+            "843002e373ba24fd",
+            "c1a8df98fe814738",
+            "a370a2f240d877b3"
+        ],
+        "x": 1094,
+        "y": 339,
+        "w": 512,
+        "h": 322
+    },
+    {
+        "id": "4ee1efd5cda39c11",
+        "type": "ui_text",
+        "z": "9ea88d13c999ce22",
+        "g": "62a7ea2cfb50b3c0",
+        "group": "d2361cae5e24d5a9",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 1530,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "f09cd67ca99c6267",
+        "type": "ui_text",
+        "z": "9ea88d13c999ce22",
+        "g": "62a7ea2cfb50b3c0",
+        "group": "d2361cae5e24d5a9",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Time:",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 1530,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "9b34a13798f04d8d",
+        "type": "ui_text",
+        "z": "9ea88d13c999ce22",
+        "g": "62a7ea2cfb50b3c0",
+        "group": "fbacb5a43fde6d4f",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 1530,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "713acf47999494eb",
+        "type": "ui_text",
+        "z": "9ea88d13c999ce22",
+        "g": "62a7ea2cfb50b3c0",
+        "group": "fbacb5a43fde6d4f",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Time:",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 1530,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "63e03c73c9530e6c",
+        "type": "ui_gauge",
+        "z": "9ea88d13c999ce22",
+        "g": "62a7ea2cfb50b3c0",
+        "name": "",
+        "group": "d2361cae5e24d5a9",
+        "order": 2,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "14",
+        "colors": [
+            "#f56e00",
+            "#f56e00",
+            "#f56e00"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1530,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "be4f9a1f3f8de81b",
+        "type": "ui_gauge",
+        "z": "9ea88d13c999ce22",
+        "g": "62a7ea2cfb50b3c0",
+        "name": "",
+        "group": "fbacb5a43fde6d4f",
+        "order": 2,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "14",
+        "colors": [
+            "#24761e",
+            "#24761e",
+            "#24761e"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1530,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "39526443d1e5ee6e",
+        "type": "function",
+        "z": "9ea88d13c999ce22",
+        "g": "62a7ea2cfb50b3c0",
+        "name": "Extracting3",
+        "func": "// Function node code\nfunction hexToDecimal(hexString) {\n    // Remove the first 6 characters from the hexadecimal string\n    hexString = hexString.substring(6);\n\n    // Convert the hexadecimal string to a 32-bit integer\n    const intValue = parseInt(hexString, 16);\n\n    // Separate the bits of the 32-bit integer\n    const signBit = (intValue >> 31) & 0x1;\n    const exponentBits = (intValue >> 23) & 0xFF;\n    const mantissaBits = intValue & 0x7FFFFF;\n\n    // Determine the sign of the decimal number\n    const sign = signBit === 0 ? 1 : -1;\n\n    // Convert the exponent bits to a decimal integer\n    const exponent = exponentBits - 127;\n\n    // Calculate the decimal value of the mantissa\n    let mantissa = 1 + mantissaBits / Math.pow(2, 23);\n\n    // If the exponent is not zero (special cases handled separately)\n    if (exponent !== 0) {\n        // Apply the exponent to the mantissa\n        mantissa *= Math.pow(2, exponent);\n    }\n\n    // Round the result to 8 decimal places (adjust as needed)\n    const roundedDecimal = (sign * mantissa).toFixed(8);\n\n    return roundedDecimal;\n}\n\n\n// Extract the values of \"devaddr\" and \"data\" from the payload JSON\nvar devAddr = msg.payload.devaddr;\nvar dataa = msg.payload.data;\nvar datetime = msg.payload.datetime;\n\n// Convert the hexadecimal data to decimal using the hexToDecimal function\nvar dataDec = hexToDecimal(dataa);\nmsg.payload = parseFloat(dataDec);\nvar dataDecimal = parseFloat(msg.payload.toFixed(2));\n// Filtrar por \"devaddr\" del sensor 1 (por ejemplo, \"BC100309\")\nif (devAddr === \"BC100303\") {\n    // Crear un nuevo mensaje con el valor convertido de \"data\" para el medidor del sensor 1\n    var newMsg = {\n\n        payload: dataDecimal,\n        topic: \"Sensor3\"\n    }; var data = {\n        payload: datetime,\n        topic: \"dataTime\"\n    };\n    var devAddrr = {\n        payload: devAddr,\n        topic: \"SensorName\"\n\n    };\n\n    // Devolver el nuevo mensaje\n    return [devAddrr, newMsg, data];\n\n}\nelse {\n    // Si no es el sensor 1, retornar null para que no se envíe ningún mensaje al nodo \"gauge\"\n    return null;\n}\n",
+        "outputs": 3,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1290,
+        "y": 440,
+        "wires": [
+            [
+                "4ee1efd5cda39c11"
+            ],
+            [
+                "63e03c73c9530e6c",
+                "843002e373ba24fd"
+            ],
+            [
+                "f09cd67ca99c6267"
+            ]
+        ]
+    },
+    {
+        "id": "a81f855fb3c9f44b",
+        "type": "function",
+        "z": "9ea88d13c999ce22",
+        "g": "62a7ea2cfb50b3c0",
+        "name": "Extracting4",
+        "func": "// Function node code\nfunction hexToDecimal(hexString) {\n    // Remove the first 6 characters from the hexadecimal string\n    hexString = hexString.substring(6);\n\n    // Convert the hexadecimal string to a 32-bit integer\n    const intValue = parseInt(hexString, 16);\n\n    // Separate the bits of the 32-bit integer\n    const signBit = (intValue >> 31) & 0x1;\n    const exponentBits = (intValue >> 23) & 0xFF;\n    const mantissaBits = intValue & 0x7FFFFF;\n\n    // Determine the sign of the decimal number\n    const sign = signBit === 0 ? 1 : -1;\n\n    // Convert the exponent bits to a decimal integer\n    const exponent = exponentBits - 127;\n\n    // Calculate the decimal value of the mantissa\n    let mantissa = 1 + mantissaBits / Math.pow(2, 23);\n\n    // If the exponent is not zero (special cases handled separately)\n    if (exponent !== 0) {\n        // Apply the exponent to the mantissa\n        mantissa *= Math.pow(2, exponent);\n    }\n\n    // Round the result to 8 decimal places (adjust as needed)\n    const roundedDecimal = (sign * mantissa).toFixed(8);\n\n    return roundedDecimal;\n}\n\n\n// Extract the values of \"devaddr\" and \"data\" from the payload JSON\nvar devAddr = msg.payload.devaddr;\nvar dataa = msg.payload.data;\nvar datetime = msg.payload.datetime;\n\n// Convert the hexadecimal data to decimal using the hexToDecimal function\nvar dataDec = hexToDecimal(dataa);\nmsg.payload = parseFloat(dataDec);\nvar dataDecimal = parseFloat(msg.payload.toFixed(2));\n// Filtrar por \"devaddr\" del sensor 1 (por ejemplo, \"BC100309\")\nif (devAddr === \"BC100304\") {\n    // Crear un nuevo mensaje con el valor convertido de \"data\" para el medidor del sensor 1\n    var newMsg = {\n\n        payload: dataDecimal,\n        topic: \"Sensor4\"\n    }; var data = {\n        payload: datetime,\n        topic: \"dataTime\"\n    };\n    var devAddrr = {\n        payload: devAddr,\n        topic: \"SensorName\"\n\n    };\n\n    // Devolver el nuevo mensaje\n    return [devAddrr, newMsg, data];\n\n}\nelse {\n    // Si no es el sensor 1, retornar null para que no se envíe ningún mensaje al nodo \"gauge\"\n    return null;\n}\n",
+        "outputs": 3,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1290,
+        "y": 580,
+        "wires": [
+            [
+                "9b34a13798f04d8d"
+            ],
+            [
+                "be4f9a1f3f8de81b",
+                "843002e373ba24fd"
+            ],
+            [
+                "713acf47999494eb"
+            ]
+        ]
+    },
+    {
+        "id": "843002e373ba24fd",
+        "type": "link out",
+        "z": "9ea88d13c999ce22",
+        "g": "62a7ea2cfb50b3c0",
+        "name": "link out 9",
+        "mode": "link",
+        "links": [
+            "d7cce32cbf7f4f0e"
+        ],
+        "x": 1405,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "c1a8df98fe814738",
+        "type": "link in",
+        "z": "9ea88d13c999ce22",
+        "g": "62a7ea2cfb50b3c0",
+        "name": "link in 6",
+        "links": [
+            "61d27f1d800733de"
+        ],
+        "x": 1145,
+        "y": 520,
+        "wires": [
+            [
+                "39526443d1e5ee6e",
+                "a81f855fb3c9f44b"
+            ]
+        ]
+    },
+    {
+        "id": "a370a2f240d877b3",
+        "type": "comment",
+        "z": "9ea88d13c999ce22",
+        "g": "62a7ea2cfb50b3c0",
+        "name": "Sensor 3 & Sensor 4",
+        "info": "",
+        "x": 1210,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "d2361cae5e24d5a9",
+        "type": "ui_group",
+        "name": "Sensor 3",
+        "tab": "1ec2607ae34aa938",
+        "order": 3,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "fbacb5a43fde6d4f",
+        "type": "ui_group",
+        "name": "Sensor 4",
+        "tab": "1ec2607ae34aa938",
+        "order": 4,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "92c9c09a6e60328c",
+        "type": "group",
+        "z": "9ea88d13c999ce22",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "00fd1540acec0ac9",
+            "1a2f1c9616f4a065",
+            "b836a335e8bc3d90",
+            "8f72083a815664b3",
+            "92d8c24c16fae6d3",
+            "05739a443ca308a2",
+            "ae44d1586dda98c3",
+            "f58e961420c71af3",
+            "bc91beac8c2b9855",
+            "61d27f1d800733de",
+            "e57c5f876d638b96"
+        ],
+        "x": 174,
+        "y": 419,
+        "w": 282,
+        "h": 542
+    },
+    {
+        "id": "00fd1540acec0ac9",
+        "type": "inject",
+        "z": "9ea88d13c999ce22",
+        "g": "92c9c09a6e60328c",
+        "name": "Sensor 1",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "0.5",
+        "topic": "Sensor 1",
+        "payload": "{\"all_gw\":[{\"lsnr\":10.5,\"mac\":\"1C8776FFFF57442E\",\"rssi\":-23}],\"appargs\":\"13SHDO1\",\"best_gw\":{\"lsnr\":10.5,\"mac\":\"1C8776FFFF57442E\",\"rssi\":-23},\"data\":\"BC020041273196\",\"datetime\":\"2023-08-04T14:26:00Z\",\"devaddr\":\"BC100301\",\"fcnt\":17,\"lsnr\":10.5,\"rssi\":-23}",
+        "payloadType": "json",
+        "x": 280,
+        "y": 580,
+        "wires": [
+            [
+                "61d27f1d800733de"
+            ]
+        ]
+    },
+    {
+        "id": "1a2f1c9616f4a065",
+        "type": "mqtt in",
+        "z": "9ea88d13c999ce22",
+        "d": true,
+        "g": "92c9c09a6e60328c",
+        "name": "",
+        "topic": "uplink/lora",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "407a01e4.6b637",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 260,
+        "y": 520,
+        "wires": [
+            [
+                "61d27f1d800733de"
+            ]
+        ]
+    },
+    {
+        "id": "b836a335e8bc3d90",
+        "type": "inject",
+        "z": "9ea88d13c999ce22",
+        "g": "92c9c09a6e60328c",
+        "name": "Sensor 2",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "Sensor 2",
+        "payload": "{\"all_gw\":[{\"lsnr\":5.6,\"mac\":\"1C8776FFFF57442E\",\"rssi\":-22}],\"appargs\":\"13SHDO1\",\"best_gw\":{\"lsnr\":5.6,\"mac\":\"1C8776FFFF57442E\",\"rssi\":-23},\"data\":\"BC02004110A562\",\"datetime\":\"2023-08-04T14:26:00Z\",\"devaddr\":\"BC100302\",\"fcnt\":16,\"lsnr\":5.6,\"rssi\":-22}",
+        "payloadType": "json",
+        "x": 280,
+        "y": 620,
+        "wires": [
+            [
+                "61d27f1d800733de"
+            ]
+        ]
+    },
+    {
+        "id": "8f72083a815664b3",
+        "type": "inject",
+        "z": "9ea88d13c999ce22",
+        "g": "92c9c09a6e60328c",
+        "name": "Sensor 3",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "Sensor 3",
+        "payload": "{\"all_gw\":[{\"lsnr\":8.6,\"mac\":\"1C8776FFFF57442E\",\"rssi\":-22}],\"appargs\":\"13SHDO1\",\"best_gw\":{\"lsnr\":8.6,\"mac\":\"1C8776FFFF57442E\",\"rssi\":-23},\"data\":\"BC02003F5F1141\",\"datetime\":\"2023-08-04T14:26:00Z\",\"devaddr\":\"BC100303\",\"fcnt\":16,\"lsnr\":8.6,\"rssi\":-22}",
+        "payloadType": "json",
+        "x": 280,
+        "y": 680,
+        "wires": [
+            [
+                "61d27f1d800733de"
+            ]
+        ]
+    },
+    {
+        "id": "92d8c24c16fae6d3",
+        "type": "inject",
+        "z": "9ea88d13c999ce22",
+        "g": "92c9c09a6e60328c",
+        "name": "Sensor 4",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "Sensor 4",
+        "payload": "{\"all_gw\":[{\"lsnr\":3.6,\"mac\":\"1C8776FFFF57442E\",\"rssi\":-22}],\"appargs\":\"13SHDO1\",\"best_gw\":{\"lsnr\":3.6,\"mac\":\"1C8776FFFF57442E\",\"rssi\":-23},\"data\":\"BC020040E248b0\",\"datetime\":\"2023-08-04T14:26:00Z\",\"devaddr\":\"BC100304\",\"fcnt\":16,\"lsnr\":3.6,\"rssi\":-22}",
+        "payloadType": "json",
+        "x": 280,
+        "y": 720,
+        "wires": [
+            [
+                "61d27f1d800733de"
+            ]
+        ]
+    },
+    {
+        "id": "05739a443ca308a2",
+        "type": "inject",
+        "z": "9ea88d13c999ce22",
+        "g": "92c9c09a6e60328c",
+        "name": "Sensor 5",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "Sensor 5",
+        "payload": "{\"all_gw\":[{\"lsnr\":10.5,\"mac\":\"1C8776FFFF57442E\",\"rssi\":-23}],\"appargs\":\"13SHDO1\",\"best_gw\":{\"lsnr\":10.5,\"mac\":\"1C8776FFFF57442E\",\"rssi\":-23},\"data\":\"BC020041273196\",\"datetime\":\"2023-08-04T14:26:00Z\",\"devaddr\":\"BC100305\",\"fcnt\":17,\"lsnr\":10.5,\"rssi\":-23}",
+        "payloadType": "json",
+        "x": 280,
+        "y": 780,
+        "wires": [
+            [
+                "61d27f1d800733de"
+            ]
+        ]
+    },
+    {
+        "id": "ae44d1586dda98c3",
+        "type": "inject",
+        "z": "9ea88d13c999ce22",
+        "g": "92c9c09a6e60328c",
+        "name": "Sensor 6",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "Sensor 6",
+        "payload": "{\"all_gw\":[{\"lsnr\":5.6,\"mac\":\"1C8776FFFF57442E\",\"rssi\":-22}],\"appargs\":\"13SHDO1\",\"best_gw\":{\"lsnr\":5.6,\"mac\":\"1C8776FFFF57442E\",\"rssi\":-23},\"data\":\"BC02004110A562\",\"datetime\":\"2023-08-04T14:26:00Z\",\"devaddr\":\"BC100306\",\"fcnt\":16,\"lsnr\":5.6,\"rssi\":-22}",
+        "payloadType": "json",
+        "x": 280,
+        "y": 820,
+        "wires": [
+            [
+                "61d27f1d800733de"
+            ]
+        ]
+    },
+    {
+        "id": "f58e961420c71af3",
+        "type": "inject",
+        "z": "9ea88d13c999ce22",
+        "g": "92c9c09a6e60328c",
+        "name": "Sensor 7",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "Sensor 7",
+        "payload": "{\"all_gw\":[{\"lsnr\":8.6,\"mac\":\"1C8776FFFF57442E\",\"rssi\":-22}],\"appargs\":\"13SHDO1\",\"best_gw\":{\"lsnr\":8.6,\"mac\":\"1C8776FFFF57442E\",\"rssi\":-23},\"data\":\"BC02003F5F1141\",\"datetime\":\"2023-08-04T14:26:00Z\",\"devaddr\":\"BC100307\",\"fcnt\":16,\"lsnr\":8.6,\"rssi\":-22}",
+        "payloadType": "json",
+        "x": 280,
+        "y": 880,
+        "wires": [
+            [
+                "61d27f1d800733de"
+            ]
+        ]
+    },
+    {
+        "id": "bc91beac8c2b9855",
+        "type": "inject",
+        "z": "9ea88d13c999ce22",
+        "g": "92c9c09a6e60328c",
+        "name": "Sensor 8",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "Sensor 8",
+        "payload": "{\"all_gw\":[{\"lsnr\":3.6,\"mac\":\"1C8776FFFF57442E\",\"rssi\":-22}],\"appargs\":\"13SHDO1\",\"best_gw\":{\"lsnr\":3.6,\"mac\":\"1C8776FFFF57442E\",\"rssi\":-23},\"data\":\"BC020040E248b0\",\"datetime\":\"2023-08-04T14:26:00Z\",\"devaddr\":\"BC100308\",\"fcnt\":16,\"lsnr\":3.6,\"rssi\":-22}",
+        "payloadType": "json",
+        "x": 280,
+        "y": 920,
+        "wires": [
+            [
+                "61d27f1d800733de"
+            ]
+        ]
+    },
+    {
+        "id": "61d27f1d800733de",
+        "type": "link out",
+        "z": "9ea88d13c999ce22",
+        "g": "92c9c09a6e60328c",
+        "name": "link out 7",
+        "mode": "link",
+        "links": [
+            "554999ac3f23502d",
+            "b851ce77cf38d286",
+            "c1a8df98fe814738",
+            "e60c73a11c71045d"
+        ],
+        "x": 415,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "e57c5f876d638b96",
+        "type": "comment",
+        "z": "9ea88d13c999ce22",
+        "g": "92c9c09a6e60328c",
+        "name": "Input ",
+        "info": "",
+        "x": 250,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "407a01e4.6b637",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": " 192.168.43.37",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    }
+]
