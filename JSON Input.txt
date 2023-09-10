@@ -1,0 +1,21 @@
+{
+    "all_gw": [
+        {
+            "lsnr": 10.5,
+            "mac": "1C8776FFFF57442E",
+            "rssi": -23
+        }
+    ],
+    "appargs": "13SHDO1",
+    "best_gw": {
+        "lsnr": 10.5,
+        "mac": "1C8776FFFF57442E",
+        "rssi": -23
+    },
+    "data": "BC020041273196",
+    "datetime": "2023-08-04T14:26:00Z",
+    "devaddr": "BC100301",
+    "fcnt": 17,
+    "lsnr": 10.5,
+    "rssi": -23
+}

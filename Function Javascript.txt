@@ -1,0 +1,69 @@
+// Function node code
+function hexToDecimal(hexString) {
+    // Remove the first 6 characters from the hexadecimal string
+    hexString = hexString.substring(6);
+
+    // Convert the hexadecimal string to a 32-bit integer
+    const intValue = parseInt(hexString, 16);
+
+    // Separate the bits of the 32-bit integer
+    const signBit = (intValue >> 31) & 0x1;
+    const exponentBits = (intValue >> 23) & 0xFF;
+    const mantissaBits = intValue & 0x7FFFFF;
+
+    // Determine the sign of the decimal number
+    const sign = signBit === 0 ? 1 : -1;
+
+    // Convert the exponent bits to a decimal integer
+    const exponent = exponentBits - 127;
+
+    // Calculate the decimal value of the mantissa
+    let mantissa = 1 + mantissaBits / Math.pow(2, 23);
+
+    // If the exponent is not zero (special cases handled separately)
+    if (exponent !== 0) {
+        // Apply the exponent to the mantissa
+        mantissa *= Math.pow(2, exponent);
+    }
+
+    // Round the result to 8 decimal places (adjust as needed)
+    const roundedDecimal = (sign * mantissa).toFixed(8);
+
+    return roundedDecimal;
+}
+
+
+// Extract the values of "devaddr" and "data" from the payload JSON
+var devAddr = msg.payload.devaddr;
+var dataa = msg.payload.data;
+var datetime = msg.payload.datetime;
+
+// Convert the hexadecimal data to decimal using the hexToDecimal function
+var dataDec = hexToDecimal(dataa);
+msg.payload = parseFloat(dataDec);
+var dataDecimal = parseFloat(msg.payload.toFixed(2));
+// Filtrar por "devaddr" del sensor 1 (por ejemplo, "BC100309")
+if (devAddr === "BC100301") {
+    // Crear un nuevo mensaje con el valor convertido de "data" para el medidor del sensor 1
+    var newMsg = {
+
+        payload: dataDecimal,
+        topic: "Sensor1"
+    }; var data = {
+        payload: datetime,
+        topic: "dataTime"
+    };
+    var devAddrr = {
+        payload: devAddr,
+        topic: "SensorName"
+
+    };
+
+    // Devolver el nuevo mensaje
+    return [devAddrr, newMsg, data];
+
+}
+else {
+    // Si no es el sensor 1, retornar null para que no se envíe ningún mensaje al nodo "gauge"
+    return null;
+}
